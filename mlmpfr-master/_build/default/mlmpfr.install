@@ -1,0 +1,25 @@
+lib: [
+  "_build/install/default/lib/mlmpfr/META"
+  "_build/install/default/lib/mlmpfr/dune-package"
+  "_build/install/default/lib/mlmpfr/libmlmpfr_stubs.a"
+  "_build/install/default/lib/mlmpfr/mlmpfr.a"
+  "_build/install/default/lib/mlmpfr/mlmpfr.cma"
+  "_build/install/default/lib/mlmpfr/mlmpfr.cmxa"
+  "_build/install/default/lib/mlmpfr/mpfr.cmi"
+  "_build/install/default/lib/mlmpfr/mpfr.cmt"
+  "_build/install/default/lib/mlmpfr/mpfr.cmti"
+  "_build/install/default/lib/mlmpfr/mpfr.cmx"
+  "_build/install/default/lib/mlmpfr/mpfr.ml"
+  "_build/install/default/lib/mlmpfr/mpfr.mli"
+  "_build/install/default/lib/mlmpfr/opam"
+]
+libexec: [
+  "_build/install/default/lib/mlmpfr/mlmpfr.cmxs"
+]
+doc: [
+  "_build/install/default/doc/mlmpfr/LICENSE"
+  "_build/install/default/doc/mlmpfr/README.md"
+]
+stublibs: [
+  "_build/install/default/lib/stublibs/dllmlmpfr_stubs.so"
+]

@@ -1,0 +1,214 @@
+# dune build @install @runtest
+# OCAMLPARAM: unset
+# Workspace root: /Users/biber/RP-OCAML/mlmpfr-master
+$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/qs/g_hz5j5d2bz08qrxylpc06300000gn/T/dune3e436d.output 2> /dev/null
+# Auto-detected concurrency: 8
+# disable binary cache
+$ /Users/biber/.opam/4.12.0/bin/ocamlc.opt -config > /var/folders/qs/g_hz5j5d2bz08qrxylpc06300000gn/T/dune02ebfc.output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Release
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path = Some External "/Users/biber/.opam/4.12.0/lib/toplevel"
+#  ; ocaml_bin = External "/Users/biber/.opam/4.12.0/bin"
+#  ; ocaml = Ok External "/Users/biber/.opam/4.12.0/bin/ocaml"
+#  ; ocamlc = External "/Users/biber/.opam/4.12.0/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/Users/biber/.opam/4.12.0/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/Users/biber/.opam/4.12.0/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/Users/biber/.opam/4.12.0/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" : "/Users/biber/.opam/4.12.0/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/Users/biber/.opam/4.12.0/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" : "/Users/biber/RP-OCAML/mlmpfr-master"
+#        ; "INSIDE_DUNE" : "/Users/biber/RP-OCAML/mlmpfr-master/_build/default"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/Users/biber/RP-OCAML/mlmpfr-master/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/Users/biber/RP-OCAML/mlmpfr-master/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/Users/biber/RP-OCAML/mlmpfr-master/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_path = [ External "/Users/biber/.opam/4.12.0/lib" ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.12.0"
+#      ; standard_library_default = "/Users/biber/.opam/4.12.0/lib/ocaml"
+#      ; standard_library = "/Users/biber/.opam/4.12.0/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "cc"
+#      ; ocamlc_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#      ; ocamlc_cppflags =
+#          [ "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ; "-I/usr/local/opt/openssl@1.1/include"
+#          ]
+#      ; ocamlopt_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#      ; ocamlopt_cppflags =
+#          [ "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ; "-I/usr/local/opt/openssl@1.1/include"
+#          ]
+#      ; bytecomp_c_compiler =
+#          [ "cc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ; "-I/usr/local/opt/openssl@1.1/include"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "cc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ; "-I/usr/local/opt/openssl@1.1/include"
+#          ]
+#      ; native_c_libraries = [ "-lm" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "macosx"
+#      ; asm = [ "clang"; "-arch"; "x86_64"; "-Wno-trigraphs"; "-c" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-apple-darwin19.6.0"
+#      ; target = "x86_64-apple-darwin19.6.0"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X029"
+#      ; cmi_magic_number = "Caml1999I029"
+#      ; cmo_magic_number = "Caml1999O029"
+#      ; cma_magic_number = "Caml1999A029"
+#      ; cmx_magic_number = "Caml1999Y029"
+#      ; cmxa_magic_number = "Caml1999Z029"
+#      ; ast_impl_magic_number = "Caml1999M029"
+#      ; ast_intf_magic_number = "Caml1999N029"
+#      ; cmxs_magic_number = "Caml1999D029"
+#      ; cmt_magic_number = "Caml1999T029"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlc.opt -w -40 -warn-error -g -bin-annot -I src/.mlmpfr.objs/byte -no-alias-deps -o src/.mlmpfr.objs/byte/mpfr.cmi -c -intf src/mpfr.mli)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamldep.opt -modules -impl testsuite/conversion/conversionfunctions.ml) > _build/default/testsuite/conversion/.conversionfunctions.eobjs/conversionfunctions.ml.d
+$ (cd _build/default/testsuite && /usr/bin/cc -O2 -fno-strict-aliasing -fwrapv -O2 -Werror -o integerandremainderrelatedfunctions.ref integerandremainderrelatedfunctions.c -lmpfr)
+$ (cd _build/default/testsuite && /usr/bin/cc -O2 -fno-strict-aliasing -fwrapv -O2 -Werror -o miscellaneousfunctions.ref miscellaneousfunctions.c -lmpfr)
+$ (cd _build/default/testsuite && /usr/bin/cc -O2 -fno-strict-aliasing -fwrapv -O2 -Werror -o initializationfunctions.ref initializationfunctions.c -lmpfr)
+$ (cd _build/default/testsuite && /usr/bin/cc -O2 -fno-strict-aliasing -fwrapv -O2 -Werror -o exceptionrelatedfunctions.ref exceptionrelatedfunctions.c -lmpfr)
+$ (cd _build/default/testsuite && /usr/bin/cc -O2 -fno-strict-aliasing -fwrapv -O2 -Werror -o comparisonfunctions.ref comparisonfunctions.c -lmpfr)
+$ (cd _build/default/testsuite && /usr/bin/cc -O2 -fno-strict-aliasing -fwrapv -O2 -Werror -o basicarithmeticfunctions.ref basicarithmeticfunctions.c -lmpfr)
+$ (cd _build/default/testsuite/conversion && /usr/bin/cc -O2 -fno-strict-aliasing -fwrapv -O2 -Werror -o conversionfunctions.ref conversionfunctions.c -lmpfr)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamldep.opt -modules -impl testsuite/common.ml) > _build/default/testsuite/.basicarithmeticfunctions.eobjs/common.ml.d
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamldep.opt -modules -impl testsuite/basicarithmeticfunctions.ml) > _build/default/testsuite/.basicarithmeticfunctions.eobjs/basicarithmeticfunctions.ml.d
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamldep.opt -modules -impl testsuite/comparisonfunctions.ml) > _build/default/testsuite/.basicarithmeticfunctions.eobjs/comparisonfunctions.ml.d
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamldep.opt -modules -impl testsuite/comparisonoperators.ml) > _build/default/testsuite/.basicarithmeticfunctions.eobjs/comparisonoperators.ml.d
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamldep.opt -modules -impl testsuite/exceptionrelatedfunctions.ml) > _build/default/testsuite/.basicarithmeticfunctions.eobjs/exceptionrelatedfunctions.ml.d
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamldep.opt -modules -impl testsuite/initializationfunctions.ml) > _build/default/testsuite/.basicarithmeticfunctions.eobjs/initializationfunctions.ml.d
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamldep.opt -modules -impl testsuite/integerandremainderrelatedfunctions.ml) > _build/default/testsuite/.basicarithmeticfunctions.eobjs/integerandremainderrelatedfunctions.ml.d
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamldep.opt -modules -impl testsuite/miscellaneousfunctions.ml) > _build/default/testsuite/.basicarithmeticfunctions.eobjs/miscellaneousfunctions.ml.d
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamldep.opt -modules -impl testsuite/roundingrelatedfunctions.ml) > _build/default/testsuite/.basicarithmeticfunctions.eobjs/roundingrelatedfunctions.ml.d
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamldep.opt -modules -impl testsuite/specialfunctions.ml) > _build/default/testsuite/.basicarithmeticfunctions.eobjs/specialfunctions.ml.d
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlc.opt -w -40 -warn-error -g -bin-annot -I src/.mlmpfr.objs/byte -intf-suffix .ml -no-alias-deps -o src/.mlmpfr.objs/byte/mpfr.cmo -c -impl src/mpfr.ml)
+$ (cd _build/default/testsuite && /usr/bin/cc -O2 -fno-strict-aliasing -fwrapv -O2 -Werror -o roundingrelatedfunctions.ref roundingrelatedfunctions.c -lmpfr)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlopt.opt -w -40 -warn-error -g -I src/.mlmpfr.objs/byte -I src/.mlmpfr.objs/native -intf-suffix .ml -no-alias-deps -o src/.mlmpfr.objs/native/mpfr.cmx -c -impl src/mpfr.ml)
+$ (cd _build/default/testsuite && /usr/bin/cc -O2 -fno-strict-aliasing -fwrapv -O2 -Werror -o specialfunctions.ref specialfunctions.c -lmpfr)
+$ (cd _build/default/testsuite && ./integerandremainderrelatedfunctions.ref) > _build/default/testsuite/integerandremainderrelatedfunctions.expected
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlc.opt -w -40 -warn-error -g -a -o src/mlmpfr.cma -dllib -lmlmpfr_stubs -cclib -lmlmpfr_stubs -cclib -lmpfr src/.mlmpfr.objs/byte/mpfr.cmo)
+$ (cd _build/default/testsuite && ./miscellaneousfunctions.ref) > _build/default/testsuite/miscellaneousfunctions.expected
+$ (cd _build/default/testsuite && ./initializationfunctions.ref) > _build/default/testsuite/initializationfunctions.expected
+$ (cd _build/default/testsuite && ./exceptionrelatedfunctions.ref) > _build/default/testsuite/exceptionrelatedfunctions.expected
+$ (cd _build/default/testsuite && ./comparisonfunctions.ref) > _build/default/testsuite/comparisonfunctions.expected
+$ (cd _build/default/testsuite && ./basicarithmeticfunctions.ref) > _build/default/testsuite/basicarithmeticfunctions.expected
+$ (cd _build/default/testsuite/conversion && ./conversionfunctions.ref fpif_import.data) > _build/default/testsuite/conversion/conversionfunctions.expected
+$ (cd _build/default/testsuite && ./roundingrelatedfunctions.ref) > _build/default/testsuite/roundingrelatedfunctions.expected
+$ (cd _build/default/src && /usr/bin/cc -O2 -fno-strict-aliasing -fwrapv -D_FILE_OFFSET_BITS=64 -D_REENTRANT -I/usr/local/opt/openssl@1.1/include -O2 -Wall -Wextra -g -I /Users/biber/.opam/4.12.0/lib/ocaml -o mlmpfr_stubs.o -c mlmpfr_stubs.c)
+> In file included from mlmpfr_stubs.c:17:
+> ./mlmpfr_stubs.h:49:9: warning: 'Val_none' macro redefined [-Wmacro-redefined]
+> #define Val_none Val_int (0)
+>         ^
+> /Users/biber/.opam/4.12.0/lib/ocaml/caml/mlvalues.h:395:9: note: previous definition is here
+> #define Val_none Val_int(0)
+>         ^
+> In file included from mlmpfr_stubs.c:17:
+> ./mlmpfr_stubs.h:50:9: warning: 'Some_val' macro redefined [-Wmacro-redefined]
+> #define Some_val(v) Field (v, 0)
+>         ^
+> /Users/biber/.opam/4.12.0/lib/ocaml/caml/mlvalues.h:396:9: note: previous definition is here
+> #define Some_val(v) Field(v, 0)
+>         ^
+> 2 warnings generated.
+$ (cd _build/default/testsuite && ./specialfunctions.ref) > _build/default/testsuite/specialfunctions.expected
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlopt.opt -w -40 -warn-error -g -a -o src/mlmpfr.cmxa -cclib -lmlmpfr_stubs -cclib -lmpfr src/.mlmpfr.objs/native/mpfr.cmx)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlmklib.opt -g -o src/mlmpfr_stubs src/mlmpfr_stubs.o -lmpfr)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlc.opt -w -40 -warn-error -g -bin-annot -I testsuite/.basicarithmeticfunctions.eobjs/byte -I src/.mlmpfr.objs/byte -no-alias-deps -o testsuite/.basicarithmeticfunctions.eobjs/byte/common.cmo -c -impl testsuite/common.ml)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlc.opt -w -40 -warn-error -g -bin-annot -I testsuite/conversion/.conversionfunctions.eobjs/byte -I src/.mlmpfr.objs/byte -no-alias-deps -o testsuite/conversion/.conversionfunctions.eobjs/byte/conversionfunctions.cmo -c -impl testsuite/conversion/conversionfunctions.ml)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlc.opt -w -40 -warn-error -g -bin-annot -I testsuite/.basicarithmeticfunctions.eobjs/byte -I src/.mlmpfr.objs/byte -no-alias-deps -o testsuite/.basicarithmeticfunctions.eobjs/byte/miscellaneousfunctions.cmo -c -impl testsuite/miscellaneousfunctions.ml)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlc.opt -w -40 -warn-error -g -bin-annot -I testsuite/.basicarithmeticfunctions.eobjs/byte -I src/.mlmpfr.objs/byte -no-alias-deps -o testsuite/.basicarithmeticfunctions.eobjs/byte/comparisonoperators.cmo -c -impl testsuite/comparisonoperators.ml)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlc.opt -w -40 -warn-error -g -bin-annot -I testsuite/.basicarithmeticfunctions.eobjs/byte -I src/.mlmpfr.objs/byte -no-alias-deps -o testsuite/.basicarithmeticfunctions.eobjs/byte/comparisonfunctions.cmo -c -impl testsuite/comparisonfunctions.ml)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlc.opt -w -40 -warn-error -g -bin-annot -I testsuite/.basicarithmeticfunctions.eobjs/byte -I src/.mlmpfr.objs/byte -no-alias-deps -o testsuite/.basicarithmeticfunctions.eobjs/byte/exceptionrelatedfunctions.cmo -c -impl testsuite/exceptionrelatedfunctions.ml)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlc.opt -w -40 -warn-error -g -bin-annot -I testsuite/.basicarithmeticfunctions.eobjs/byte -I src/.mlmpfr.objs/byte -no-alias-deps -o testsuite/.basicarithmeticfunctions.eobjs/byte/basicarithmeticfunctions.cmo -c -impl testsuite/basicarithmeticfunctions.ml)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlc.opt -w -40 -warn-error -g -bin-annot -I testsuite/.basicarithmeticfunctions.eobjs/byte -I src/.mlmpfr.objs/byte -no-alias-deps -o testsuite/.basicarithmeticfunctions.eobjs/byte/roundingrelatedfunctions.cmo -c -impl testsuite/roundingrelatedfunctions.ml)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlc.opt -w -40 -warn-error -g -bin-annot -I testsuite/.basicarithmeticfunctions.eobjs/byte -I src/.mlmpfr.objs/byte -no-alias-deps -o testsuite/.basicarithmeticfunctions.eobjs/byte/initializationfunctions.cmo -c -impl testsuite/initializationfunctions.ml)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlc.opt -w -40 -warn-error -g -bin-annot -I testsuite/.basicarithmeticfunctions.eobjs/byte -I src/.mlmpfr.objs/byte -no-alias-deps -o testsuite/.basicarithmeticfunctions.eobjs/byte/integerandremainderrelatedfunctions.cmo -c -impl testsuite/integerandremainderrelatedfunctions.ml)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlc.opt -w -40 -warn-error -g -bin-annot -I testsuite/.basicarithmeticfunctions.eobjs/byte -I src/.mlmpfr.objs/byte -no-alias-deps -o testsuite/.basicarithmeticfunctions.eobjs/byte/specialfunctions.cmo -c -impl testsuite/specialfunctions.ml)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlopt.opt -w -40 -warn-error -g -I testsuite/.basicarithmeticfunctions.eobjs/byte -I testsuite/.basicarithmeticfunctions.eobjs/native -I src/.mlmpfr.objs/byte -I src/.mlmpfr.objs/native -intf-suffix .ml -no-alias-deps -o testsuite/.basicarithmeticfunctions.eobjs/native/common.cmx -c -impl testsuite/common.ml)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlopt.opt -w -40 -warn-error -g -I testsuite/conversion/.conversionfunctions.eobjs/byte -I testsuite/conversion/.conversionfunctions.eobjs/native -I src/.mlmpfr.objs/byte -I src/.mlmpfr.objs/native -intf-suffix .ml -no-alias-deps -o testsuite/conversion/.conversionfunctions.eobjs/native/conversionfunctions.cmx -c -impl testsuite/conversion/conversionfunctions.ml)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlopt.opt -w -40 -warn-error -g -I testsuite/.basicarithmeticfunctions.eobjs/byte -I testsuite/.basicarithmeticfunctions.eobjs/native -I src/.mlmpfr.objs/byte -I src/.mlmpfr.objs/native -intf-suffix .ml -no-alias-deps -o testsuite/.basicarithmeticfunctions.eobjs/native/miscellaneousfunctions.cmx -c -impl testsuite/miscellaneousfunctions.ml)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlopt.opt -w -40 -warn-error -g -I testsuite/.basicarithmeticfunctions.eobjs/byte -I testsuite/.basicarithmeticfunctions.eobjs/native -I src/.mlmpfr.objs/byte -I src/.mlmpfr.objs/native -intf-suffix .ml -no-alias-deps -o testsuite/.basicarithmeticfunctions.eobjs/native/comparisonoperators.cmx -c -impl testsuite/comparisonoperators.ml)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlopt.opt -w -40 -warn-error -g -I testsuite/.basicarithmeticfunctions.eobjs/byte -I testsuite/.basicarithmeticfunctions.eobjs/native -I src/.mlmpfr.objs/byte -I src/.mlmpfr.objs/native -intf-suffix .ml -no-alias-deps -o testsuite/.basicarithmeticfunctions.eobjs/native/comparisonfunctions.cmx -c -impl testsuite/comparisonfunctions.ml)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlopt.opt -w -40 -warn-error -g -I testsuite/.basicarithmeticfunctions.eobjs/byte -I testsuite/.basicarithmeticfunctions.eobjs/native -I src/.mlmpfr.objs/byte -I src/.mlmpfr.objs/native -intf-suffix .ml -no-alias-deps -o testsuite/.basicarithmeticfunctions.eobjs/native/exceptionrelatedfunctions.cmx -c -impl testsuite/exceptionrelatedfunctions.ml)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlopt.opt -w -40 -warn-error -g -shared -linkall -I src -o src/mlmpfr.cmxs src/mlmpfr.cmxa)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlopt.opt -w -40 -warn-error -g -I testsuite/.basicarithmeticfunctions.eobjs/byte -I testsuite/.basicarithmeticfunctions.eobjs/native -I src/.mlmpfr.objs/byte -I src/.mlmpfr.objs/native -intf-suffix .ml -no-alias-deps -o testsuite/.basicarithmeticfunctions.eobjs/native/roundingrelatedfunctions.cmx -c -impl testsuite/roundingrelatedfunctions.ml)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlopt.opt -w -40 -warn-error -g -I testsuite/.basicarithmeticfunctions.eobjs/byte -I testsuite/.basicarithmeticfunctions.eobjs/native -I src/.mlmpfr.objs/byte -I src/.mlmpfr.objs/native -intf-suffix .ml -no-alias-deps -o testsuite/.basicarithmeticfunctions.eobjs/native/basicarithmeticfunctions.cmx -c -impl testsuite/basicarithmeticfunctions.ml)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlopt.opt -w -40 -warn-error -g -I testsuite/.basicarithmeticfunctions.eobjs/byte -I testsuite/.basicarithmeticfunctions.eobjs/native -I src/.mlmpfr.objs/byte -I src/.mlmpfr.objs/native -intf-suffix .ml -no-alias-deps -o testsuite/.basicarithmeticfunctions.eobjs/native/initializationfunctions.cmx -c -impl testsuite/initializationfunctions.ml)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlopt.opt -w -40 -warn-error -g -I testsuite/.basicarithmeticfunctions.eobjs/byte -I testsuite/.basicarithmeticfunctions.eobjs/native -I src/.mlmpfr.objs/byte -I src/.mlmpfr.objs/native -intf-suffix .ml -no-alias-deps -o testsuite/.basicarithmeticfunctions.eobjs/native/integerandremainderrelatedfunctions.cmx -c -impl testsuite/integerandremainderrelatedfunctions.ml)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlopt.opt -w -40 -warn-error -g -I testsuite/.basicarithmeticfunctions.eobjs/byte -I testsuite/.basicarithmeticfunctions.eobjs/native -I src/.mlmpfr.objs/byte -I src/.mlmpfr.objs/native -intf-suffix .ml -no-alias-deps -o testsuite/.basicarithmeticfunctions.eobjs/native/specialfunctions.cmx -c -impl testsuite/specialfunctions.ml)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlopt.opt -w -40 -warn-error -g -o testsuite/conversion/conversionfunctions.exe src/mlmpfr.cmxa -I src testsuite/conversion/.conversionfunctions.eobjs/native/conversionfunctions.cmx)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlopt.opt -w -40 -warn-error -g -o testsuite/miscellaneousfunctions.exe src/mlmpfr.cmxa -I src testsuite/.basicarithmeticfunctions.eobjs/native/miscellaneousfunctions.cmx)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlopt.opt -w -40 -warn-error -g -o testsuite/comparisonoperators.exe src/mlmpfr.cmxa -I src testsuite/.basicarithmeticfunctions.eobjs/native/comparisonoperators.cmx)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlopt.opt -w -40 -warn-error -g -o testsuite/comparisonfunctions.exe src/mlmpfr.cmxa -I src testsuite/.basicarithmeticfunctions.eobjs/native/comparisonfunctions.cmx)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlopt.opt -w -40 -warn-error -g -o testsuite/exceptionrelatedfunctions.exe src/mlmpfr.cmxa -I src testsuite/.basicarithmeticfunctions.eobjs/native/exceptionrelatedfunctions.cmx)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlopt.opt -w -40 -warn-error -g -o testsuite/roundingrelatedfunctions.exe src/mlmpfr.cmxa -I src testsuite/.basicarithmeticfunctions.eobjs/native/roundingrelatedfunctions.cmx)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlopt.opt -w -40 -warn-error -g -o testsuite/basicarithmeticfunctions.exe src/mlmpfr.cmxa -I src testsuite/.basicarithmeticfunctions.eobjs/native/basicarithmeticfunctions.cmx)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlopt.opt -w -40 -warn-error -g -o testsuite/initializationfunctions.exe src/mlmpfr.cmxa -I src testsuite/.basicarithmeticfunctions.eobjs/native/common.cmx testsuite/.basicarithmeticfunctions.eobjs/native/initializationfunctions.cmx)
+$ (cd _build/default/testsuite/conversion && ./conversionfunctions.exe fpif_import.data) > _build/default/testsuite/conversion/converstionfunctions.output
+$ (cd _build/default/testsuite/conversion && ./conversionfunctions.exe fpif_import.data) > _build/default/testsuite/conversion/conversionfunctions.output
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlopt.opt -w -40 -warn-error -g -o testsuite/integerandremainderrelatedfunctions.exe src/mlmpfr.cmxa -I src testsuite/.basicarithmeticfunctions.eobjs/native/common.cmx testsuite/.basicarithmeticfunctions.eobjs/native/integerandremainderrelatedfunctions.cmx)
+$ (cd _build/default && /Users/biber/.opam/4.12.0/bin/ocamlopt.opt -w -40 -warn-error -g -o testsuite/specialfunctions.exe src/mlmpfr.cmxa -I src testsuite/.basicarithmeticfunctions.eobjs/native/common.cmx testsuite/.basicarithmeticfunctions.eobjs/native/specialfunctions.cmx)
+$ (cd _build/default/testsuite/conversion && /usr/bin/diff fpif_export.output fpif_export.expected)
+$ (cd _build/default/testsuite && ./miscellaneousfunctions.exe) > _build/default/testsuite/miscellaneousfunctions.output
+$ (cd _build/default/testsuite && ./comparisonoperators.exe) > _build/default/testsuite/comparisonoperators.output
+$ (cd _build/default/testsuite && ./comparisonfunctions.exe) > _build/default/testsuite/comparisonfunctions.output
+$ (cd _build/default/testsuite && ./exceptionrelatedfunctions.exe) > _build/default/testsuite/exceptionrelatedfunctions.output
+$ (cd _build/default/testsuite && ./roundingrelatedfunctions.exe) > _build/default/testsuite/roundingrelatedfunctions.output
+$ (cd _build/default/testsuite && ./basicarithmeticfunctions.exe) > _build/default/testsuite/basicarithmeticfunctions.output
+$ (cd _build/default/testsuite && ./initializationfunctions.exe) > _build/default/testsuite/initializationfunctions.output
+$ (cd _build/default/testsuite && ./integerandremainderrelatedfunctions.exe) > _build/default/testsuite/integerandremainderrelatedfunctions.output
+$ (cd _build/default/testsuite && ./specialfunctions.exe) > _build/default/testsuite/specialfunctions.output

@@ -1,0 +1,13 @@
+(lang dune 2.9)
+(name mlmpfr)
+(library
+ (name mlmpfr)
+ (kind normal)
+ (archives (byte mlmpfr.cma) (native mlmpfr.cmxa))
+ (plugins (byte mlmpfr.cma) (native mlmpfr.cmxs))
+ (foreign_objects mlmpfr_stubs.o)
+ (foreign_archives libmlmpfr_stubs.a)
+ (native_archives mlmpfr.a)
+ (modes byte native)
+ (modules
+  (singleton (name Mpfr) (obj_name mpfr) (visibility public) (impl) (intf))))

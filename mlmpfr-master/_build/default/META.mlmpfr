@@ -1,0 +1,6 @@
+description = ""
+requires = ""
+archive(byte) = "mlmpfr.cma"
+archive(native) = "mlmpfr.cmxa"
+plugin(byte) = "mlmpfr.cma"
+plugin(native) = "mlmpfr.cmxs"
